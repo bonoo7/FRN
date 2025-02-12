@@ -1,28 +1,46 @@
 {
   "expo": {
-    "name": "FRN",
-    "slug": "FRN",
+    "name": "تحدي المعرفة",
+    "slug": "frn",
+    "scheme": "frn",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bonoo7.frn"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bonoo7.frn",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "webpack"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ae1f7b7b-ce85-4b2b-8f4e-d93a79130def"
+      }
     }
   }
 }

@@ -1,0 +1,18 @@
+/* إضافة قواعد CSS للشاشات المختلفة */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+  .card {
+    width: 48%;
+  }
+} 
